@@ -1,0 +1,27 @@
+Question Link :- https://www.pepcoding.com/resources/online-java-foundation/patterns/pattern-type-2-official/ojquestion
+
+
+Solution:-
+
+import java.util.*;
+
+
+public class Pattern2 {
+  public static void main(String[] args)
+  {
+    Scanner scn = new Scanner(System.in);
+    int n = scn.nextInt();
+
+    int nstars = n;
+
+    for (int i = 1; i <= n ; i++)
+    {
+      for (int j = 1; j <= nstars; j++)
+      {
+        System.out.print("*	");
+      }
+      nstars--;
+      System.out.println();
+    }
+  }
+}
